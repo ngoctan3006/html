@@ -1,0 +1,149 @@
+@import url('./grid.css');
+@import url(./base.css);
+
+/* Header */
+.header {
+    display: flex;
+    height: 46px;
+    background-color: #1c1c1c;
+    align-items: center;
+}
+
+.header__about {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__about-item {
+    margin-right: 20px;
+}
+
+.header__about-item:hover .header__about-link {
+    color: var(--primary-color);
+}
+
+.header__about-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    transition: color ease 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.header__about-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.header-wrapper {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    align-items: center;
+}
+
+.header__contact {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.header__contact-item:hover .header__contact-icon {
+    color: var(--primary-color);
+}
+
+.header__contact-icon {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: color ease 0.2s;
+    margin-right: 16px;
+    height: 100%;
+}
+
+.header__language {
+    background-color: #3abdc1;
+    color: var(--white-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__language-text {
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.header__language-icon {
+    font-size: 1.7rem;
+}
+
+.header__language-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    list-style: none;
+    padding: 0 20px 0 40px;
+    transition: height 0.2s linear;
+}
+
+.header__language:hover .header__language-list {
+    height: 120px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.header__language-item {
+    padding: 7px 0;
+}
+
+.header__language:hover .header__language-item-text {
+    display: inline-block;
+}
+
+.header__language-item-text {
+    font-size: 1.3rem;
+    color: var(--white-color);
+    display: none;
+}
+
+.header__language-item:hover .underline-animate::after {
+    width: 100%;
+}
+
+.header__user {
+    height: 100%;
+    width: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.header__user-img {
+    width: 24px;
+    border-radius: 50%;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    height: 140px;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 80px;
+    margin-top: auto;
+}
