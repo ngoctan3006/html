@@ -197,13 +197,25 @@
     list-style: none;
     padding: 28px 0 30px;
     background-color: var(--white-color);
-    transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.2s linear;
+    animation: slideDown 0.2s linear;
+    display: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
 
 .navbar-item:hover .subnav {
     transform: scaleY(1);
+    display: block;
 }
 
 .subnav-link {
