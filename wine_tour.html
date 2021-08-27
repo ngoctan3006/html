@@ -13,89 +13,268 @@
     <!-- Link demo: https://setsail.qodeinteractive.com/wine-tours -->
     <div class="app">
         <!-- Begin header -->
-        <div class="header">
-            <!-- Begin about -->
-            <ul class="header__about">
-                <li class="header__about-item">
-                    <a href="mailto: setsail@qode.com" class="header__about-link">
-                        <ion-icon class="header__about-icon" name="mail-outline"></ion-icon>
-                        <span class="header__about-text">setsail@qode.com</span>
-                    </a>
-                </li>
-                <li class="header__about-item">
-                    <a href="tel: 1 562 867 5309" class="header__about-link">
-                        <ion-icon class="header__about-icon" name="call"></ion-icon>
-                        <span class="header__about-text">1 562 867 5309</span>
-                    </a>
-                </li>
-                <li class="header__about-item">
-                    <a href="#" class="header__about-link">
-                        <ion-icon class="header__about-icon" name="location-outline"></ion-icon>
-                        <span class="header__about-text">Broadway & Morris St, New York</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- End about -->
-
-            <div class="header-wrapper">
-                <!-- Begin contact -->
-                <ul class="header__contact">
-                    <li class="header__contact-item">
-                        <a href="#">
-                            <ion-icon class="header__contact-icon" name="logo-twitter"></ion-icon>
+        <div id="header">
+            <!-- Begin topbar -->
+            <div class="topbar">
+                <!-- Begin about -->
+                <ul class="topbar__about">
+                    <li class="topbar__about-item">
+                        <a href="mailto: setsail@qode.com" class="topbar__about-link">
+                            <ion-icon class="topbar__about-icon" name="mail-outline"></ion-icon>
+                            <span class="topbar__about-text">setsail@qode.com</span>
                         </a>
                     </li>
-                    <li class="header__contact-item">
-                        <a href="#">
-                            <ion-icon class="header__contact-icon" name="logo-pinterest"></ion-icon>
+                    <li class="topbar__about-item">
+                        <a href="tel: 1 562 867 5309" class="topbar__about-link">
+                            <ion-icon class="topbar__about-icon" name="call"></ion-icon>
+                            <span class="topbar__about-text">1 562 867 5309</span>
                         </a>
                     </li>
-                    <li class="header__contact-item">
-                        <a href="#">
-                            <ion-icon class="header__contact-icon" name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="header__contact-item">
-                        <a href="#">
-                            <ion-icon class="header__contact-icon" name="logo-instagram"></ion-icon>
+                    <li class="topbar__about-item">
+                        <a href="#" class="topbar__about-link">
+                            <ion-icon class="topbar__about-icon" name="location-outline"></ion-icon>
+                            <span class="topbar__about-text">Broadway & Morris St, New York</span>
                         </a>
                     </li>
                 </ul>
-                <!-- End contact -->
-
-                <!-- Begin language -->
-                <div class="header__language">
-                    <span class="header__language-text">English</span>
-                    <ion-icon class="header__language-icon" name="chevron-down"></ion-icon>
-
-                    <ul class="header__language-list">
-                        <li class="header__language-item">
-                            <span class="header__language-item-text underline-animate">French</span>
+                <!-- End about -->
+    
+                <div class="topbar-wrapper">
+                    <!-- Begin contact -->
+                    <ul class="topbar__contact">
+                        <li class="topbar__contact-item">
+                            <a href="#">
+                                <ion-icon class="topbar__contact-icon" name="logo-twitter"></ion-icon>
+                            </a>
                         </li>
-                        <li class="header__language-item">
-                            <span class="header__language-item-text underline-animate">German</span>
+                        <li class="topbar__contact-item">
+                            <a href="#">
+                                <ion-icon class="topbar__contact-icon" name="logo-pinterest"></ion-icon>
+                            </a>
                         </li>
-                        <li class="header__language-item">
-                            <span class="header__language-item-text underline-animate">Italian</span>
+                        <li class="topbar__contact-item">
+                            <a href="#">
+                                <ion-icon class="topbar__contact-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="topbar__contact-item">
+                            <a href="#">
+                                <ion-icon class="topbar__contact-icon" name="logo-instagram"></ion-icon>
+                            </a>
                         </li>
                     </ul>
+                    <!-- End contact -->
+    
+                    <!-- Begin language -->
+                    <div class="topbar__language">
+                        <span class="topbar__language-text">English</span>
+                        <ion-icon class="topbar__language-icon" name="chevron-down"></ion-icon>
+    
+                        <ul class="topbar__language-list">
+                            <li class="topbar__language-item">
+                                <span class="topbar__language-item-text underline-animate">French</span>
+                            </li>
+                            <li class="topbar__language-item">
+                                <span class="topbar__language-item-text underline-animate">German</span>
+                            </li>
+                            <li class="topbar__language-item">
+                                <span class="topbar__language-item-text underline-animate">Italian</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End language -->
+    
+                    <!-- Begin user -->
+                    <div class="topbar__user">
+                        <img src="./assets/img/wine_tour/user/avatar.jpg" alt="" class="topbar__user-img">
+                    </div>
+                    <!-- End user -->
                 </div>
-                <!-- End language -->
-
-                <!-- Begin user -->
-                <div class="header__user">
-                    <img src="./assets/img/wine_tour/user/avatar.jpg" alt="" class="header__user-img">
-                </div>
-                <!-- End user -->
             </div>
+            <!-- End topbar -->
+            
+            <!-- Begin Logo -->
+            <div class="logo">
+                <img src="./assets/img/wine_tour/logo/logo-centered.png" alt="" class="logo-img">
+            </div>
+            <!-- End Logo -->
+
+            <!-- Begin navbar -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link active">
+                            <span class="underline-animate">Home</span>
+                        </a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Travel Agency</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Winter Holidays</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Exotic Destinations</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Summer Holidays</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">City Tours</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">New Year Trips</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Destinations Carousel</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link active">
+                                    <span class="underline-animate">Wine Tours</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Vacation Showcase</span>
+                                </a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">
+                                    <span class="underline-animate">Landing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Pages</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Destinations</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Tours</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Blog</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Shop</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="underline-animate">Element</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End navbar -->
         </div>
         <!-- End header -->
 
-        <!-- Begin Logo -->
-        <div class="logo">
-            <img src="./assets/img/wine_tour/logo/logo-centered.png" alt="" class="logo-img">
+        <!-- Begin content -->
+        <div id="content">
+            <!-- Begin slider -->
+            <div id="slider"></div>
+            <!-- End slider -->
         </div>
-        <!-- End Logo -->
+        <!-- End content -->
+
+        <!-- Begin footer -->
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-3">
+                            <img src="./assets/img/wine_tour/logo/logo-centered.png" alt="" class="footer-logo">
+                            <p class="footer__about-description">
+                                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                            </p>
+                            <a href="mailto: setsail@qode.com" class="footer__about-info">
+                                <ion-icon class="footer__about-icon" name="mail-outline"></ion-icon>
+                                <span class="footer__about-text">setsail@qode.com</span>
+                            </a>
+                            <a href="tel: 1 562 867 5309" class="footer__about-info">
+                                <ion-icon class="footer__about-icon" name="call"></ion-icon>
+                                <span class="footer__about-text">1 562 867 5309</span>
+                            </a>
+                            <a href="#" class="footer__about-info">
+                                <ion-icon class="footer__about-icon" name="location-outline"></ion-icon>
+                                <span class="footer__about-text">Broadway & Morris St, New York</span>
+                            </a>
+                        </div>
+                        <div class="col c-3">
+                            <h5 class="footer__header">Our Recent Posts</h5>
+                            <ul class="footer__post-list">
+                                <li class="footer__post-item">
+                                    <a href="#" class="footer__post-place">Visit Thailand, Bali And China</a>
+                                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                                </li>
+                                <li class="footer__post-item">
+                                    <a href="#" class="footer__post-place">The Sound Of Our Jungle</a>
+                                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                                </li>
+                                <li class="footer__post-item">
+                                    <a href="#" class="footer__post-place">New Year, New Resolutions!</a>
+                                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col c-3">
+                            <h5 class="footer__header">Subscribe to our Newsletter</h5>
+                            <p class="footer__subcribe-text">
+                                Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                            </p>
+                            <div class="footer__subcrible-form">
+                                <ion-icon class="footer__subcrible-icon" name="person"></ion-icon>
+                                <input type="text" class="footer__subcrible-form-control" placeholder="Name">
+                            </div>
+                            <div class="footer__subcrible-form">
+                                <ion-icon class="footer__subcrible-icon" name="mail-outline"></ion-icon>
+                                <input type="email" class="footer__subcrible-form-control" placeholder="Email">
+                            </div>
+                            <div class="btn-submit">SUBCRIBLE</div>
+                        </div>
+                        <div class="col c-3">
+                            <h5 class="footer__header">Our Instagram</h5>
+                            <p class="footer__subcribe-text">
+                                Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">
+                    Powered by @
+                    <a href="#" class="footer__copyright-link"> Qode Interactive 2018</a>
+                </p>
+            </div>
+        </footer>
+        <!-- End footer -->
     </div>
 </body>
 </html>
