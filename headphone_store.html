@@ -10,10 +10,108 @@
     <!-- Remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Custom Style -->
-    <link rel="stylesheet" href="./assets/css/headphone/headphone.css">
+    <link rel="stylesheet" href="./assets/css/headphone_store/headphone_store.css">
 </head>
 <body>
+    <!-- Begin Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/headphone_store/logo.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#precs" class="nav__link">Precs</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#case" class="nav__link">Case</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Begin Main -->
+    <main class="main">
+        <!-- Begin Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div>
+                    <img src="./assets/img/headphone_store/home.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <div class="home__header">
+                        <h1 class="home__title">On ear</h1>
+                        <h2 class="home__subtitle">Beats 3</h2>
+                    </div>
+
+                    <div class="home__footer">
+                        <h3 class="home__title-description">Overview</h3>
+                        <p class="home__description">
+                            Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback.
+                        </p>
+                        <a href="#" class="button button--flex">
+                            <span class="button--flex">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                                Add to Bag
+                            </span>
+                            <span class="home__price">$299</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home -->
+
+        <!-- Begin Sponsor -->
+        <section class="sponsor section"></section>
+        <!-- End Sponsor -->
+
+        <!-- Begin Specs -->
+        <section class="specs section grid" id="specs"></section>
+        <!-- End Specs -->
+
+        <!-- Begin Case -->
+        <section class="case section grid" id="case"></section>
+        <!-- End Case -->
+
+        <!-- Begin Discount -->
+        <section class="discount section"></section>
+        <!-- End Discount -->
+
+        <!-- Begin Products -->
+        <section class="products section" id="products"></section>
+        <!-- End Products -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Begin Footer -->
+    <footer class="footer section"></footer>
+    <!-- End Footer -->
+
+    <!-- Scroll Top -->
+
+    <!-- Scroll Reveal -->
     
+    <!-- Main JS -->
     <script type="text/javascript" src="./assets/js/headphone_store/headphone_store.js"></script>
 </body>
 </html>
