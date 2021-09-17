@@ -315,3 +315,239 @@ img {
 }
 
 /* Specs */
+.specs__container {
+    position: relative;
+}
+
+.specs__content {
+    row-gap: 1.5rem;
+}
+
+.specs__data {
+    display: grid;
+    row-gap: 0.25rem;
+}
+
+.specs__icon {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.specs__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.specs__subtitle {
+    font-size: var(--smaller-font-size);
+}
+
+.specs__data:nth-child(1),
+.specs__data:nth-child(4) {
+    margin-left: var(--mb-1-5);
+}
+
+.specs__img {
+    width: 250px;
+    position: absolute;
+    top: 2rem;
+    right: -4rem;
+}
+
+/* Case */
+.case__container {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.case__data {
+    padding: 5rem 0 3rem;
+}
+
+.case__img {
+    width: 250px;
+    position: absolute;
+    left: -7rem;
+}
+
+.case__description {
+    margin-bottom: var(--mb-1-5);
+    line-height: var(--text-line-height);
+}
+
+/* Discount */
+.discount__container {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.discount__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.discount__description {
+    margin-bottom: var(--mb-1);
+}
+
+.discount__img {
+    width: 300px;
+    position: absolute;
+    top: 4rem;
+    right: -11rem;
+}
+
+/* Products */
+.products__line {
+    line-height: 4rem;
+}
+
+.products__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 1.5rem;
+    padding-top: 3rem;
+}
+
+.products__card {
+    position: relative;
+    height: 132px;
+    background-color: var(--container-color);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+.products__img {
+    width: 80px;
+    position: absolute;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -3rem;
+}
+
+.products__content {
+    align-self: flex-end;
+}
+
+.products__title,
+.products__price {
+    font-size: var(--small-font-size);
+}
+
+.products__price {
+    font-weight: var(--font-semi-bold);
+}
+
+.products__button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+}
+
+/* Footer */
+.footer__container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer__logo {
+    width: 2rem;
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.footer__link {
+    color: var(--text-color);
+}
+
+.footer__link:hover {
+    color: var(--white-color);
+}
+
+.footer__form {
+    display: flex;
+    column-gap: 0.5rem;
+    background-color: var(--container-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.footer__input {
+    background-color: var(--container-color);
+    width: 90%;
+    color: var(--white-color);
+}
+
+.footer__input::placeholder {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.footer__social-link {
+    display: inline-flex;
+    color: var(--white-color);
+    background-color: var(--container-color);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.footer__social-link:hover {
+    background-color: var(--black-color);
+}
+
+.footer__copy {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__copy-link {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+/* Scroll up */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    display: flex;
+    background-color: var(--container-color);
+    padding: 0.45rem;
+    border-radius: 0.25rem;
+    opacity: 9;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+}
+
+.scrollup:hover {
+    opacity: 1;
+    background-color: var(--black-color);
+}
+
+.scrollup__icon {
+    color: var(--white-color);
+    font-size: 1.35rem;
+}
