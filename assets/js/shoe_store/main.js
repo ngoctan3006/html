@@ -22,13 +22,13 @@ function linkAction() {
 navLink.forEach(el => el.addEventListener('click', linkAction))
 
 // Scroll Section Action Link
-const sections = document.querySelectorAll('.section[id]')
+const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
     const scrollY = window.pageYOffset
     sections.forEach(el => {
         const sectionHeight = el.offsetHeight
-        const sectionTop = el.offsetTop
+        const sectionTop = el.offsetTop - 50
         const sectionId = el.getAttribute('id')
 
         if((scrollY > sectionTop) && (scrollY <= sectionTop + sectionHeight)) {
@@ -38,6 +38,7 @@ function scrollActive() {
         }
     })
 }
+window.addEventListener('scroll', scrollActive)
 
 // Change color header
 window.onscroll = () => {
