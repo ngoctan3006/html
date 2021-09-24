@@ -1,0 +1,89 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+
+/* Variables CSS */
+:root {
+    /* Colors */
+    --primary-color: #f1f1f1;
+    --secondary-color: #2b1f4d;
+    --black: #222;
+    --black2: #555;
+    --black3: #252525;
+    --black4: #000;
+    --black5: #212529;
+    --orange: #eb0028;
+    --white: #fff;
+    --grey: #959595;
+    --grey2: #666;
+    --grey3: #ccc;
+    --yellow: #ffcc00;
+    --green: #59b210;
+
+    /* Font and typography*/
+    --body-font: 'Archivo', sans-serif;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input {
+    font-size: 1.6rem;
+    font-weight: var(--font-normal);
+    font-family: var(--body-font);
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3, h4 {
+    font-weight: var(--font-medium);
+}
+
+/* Header */
+.header {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Navigation */
+.navigation {
+    position: relative;
+    height: 7rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    width: 100%;
+    padding: 0 1rem;
+}
