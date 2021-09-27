@@ -181,7 +181,145 @@ h3, h4 {
     border-radius: 50%;
 }
 
+/* Hero area */
+.hero, .hero .glide__slides {
+    background-color: var(--primary-color);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero .glide__bullet {
+    background-color: var(--black);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.hero .glide__arrow {
+    padding: 1.5rem 1.7rem;
+    opacity: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--grey);
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.glide__arrow:hover {
+    background-color: var(--black3);
+}
+
+.glide__arrow--left {
+    left: 20rem;
+}
+
+.glide__arrow--right {
+    position: absolute;
+    right: 20rem;
+}
+
+.hero:hover .glide__arrow--left {
+    left: 23rem;
+}
+
+.hero:hover .glide__arrow--right {
+    position: absolute;
+    right: 23rem;
+}
+
+.hero:hover .glide__arrow {
+    opacity: 1;
+}
+
+.hero .glide__arrow svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: var(--primary-color);
+}
+
+.hero__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 114rem;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.hero__left {
+    padding: 0 3rem;
+    flex: 0 0 50%;
+}
+
+.hero__btn {
+    display: inline-block;
+    font-weight: var(--font-bold);
+    font-size: 1.4rem;
+    background-color: var(--black);
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 1.5rem 4rem;
+    border: 1px solid var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero__btn:focus {
+    outline: none;
+}
+
+.hero__left .hero__btn:hover {
+    font-weight: var(--font-bold);
+    background-color: transparent;
+    color: var(--black);
+}
+
+.hero__left h1 {
+    margin: 1rem 0;
+}
+
+.hero__left p {
+    margin-bottom: 1rem;
+}
+
+.hero__right {
+    flex: 0 0 50%;
+    position: relative;
+    text-align: center;
+}
+
 /* Media queries */
+@media only screen and (max-width: 999px) {
+    .hero__center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__right {
+        top: 50%;
+        position: absolute;
+    }
+
+    .hero__left {
+        position: absolute;
+        top: 20%;
+        padding: 0 1rem;
+    }
+
+    .hero__right img {
+        width: 55%;
+    }
+
+    .hero__btn {
+        padding: 1.1rem 2.8rem;
+    }
+
+    .hero .glide__arrows {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;

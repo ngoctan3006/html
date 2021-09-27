@@ -1,1 +1,16 @@
-new Glide('#glide_1').mount()
+// Glide JS Carousel
+const slider1 = document.getElementById('glide_1')
+
+// Hero area
+if(slider1) {
+    new Glide(slider1, {
+        type: 'carousel',
+        startAt: 0,
+        autoplay: 3000,
+        hoverpause: true,
+        perView: 1,
+        animationDuration: 800,
+        animationTimingFunc: 'linear',
+    }).mount()
+}
+

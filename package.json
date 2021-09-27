@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ngoctan3006/html_css#readme",
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "aos": "^2.3.4"
   }
 }
