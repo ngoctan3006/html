@@ -1,0 +1,1 @@
+new Glide('#glide_1').mount()

@@ -1,0 +1,22 @@
+{
+  "name": "html_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoctan3006/html_css.git"
+  },
+  "author": "Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoctan3006/html_css/issues"
+  },
+  "homepage": "https://github.com/ngoctan3006/html_css#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
