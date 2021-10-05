@@ -2,8 +2,8 @@ const play = document.querySelector('button')
 const svgContainer = document.getElementById('svg')
 
 const animItem = bodymovin.loadAnimation({
-    wrapper: svgContainer,
-    animType: 'svg',
+    container: svgContainer,
+    renderer: 'svg',
     loop: false,
     autoplay: false,
     path: 'https://assets5.lottiefiles.com/packages/lf20_rovf9gzu.json',
