@@ -190,8 +190,8 @@
         </section>
         <!-- End Collection -->
 
-        <!-- Begin Latest Products -->
         <div class="container">
+            <!-- Begin Latest Products -->
             <section class="section latest__products" id="latest">
                 <div class="title__container">
                     <div class="section__title active" data-id="Latest Products">
@@ -804,10 +804,87 @@
                     </div>
                 </div>
             </section>
+            <!-- End Latest Products -->
+
+            <!-- Begin Category Center -->
+            <section class="category__section section" id="category">
+                <div class="tab__list">
+                    <div class="title__container tabs">
+                        <div class="section__titles category__titles">
+                            <div class="section__title filter-btn active" data-id="All products">
+                                <span class="dot"></span>
+                                <h1 class="primary__title">All products</h1>
+                            </div>
+                        </div>
+                        <div class="section__titles category__titles">
+                            <div class="section__title filter-btn" data-id="Trending Products">
+                                <span class="dot"></span>
+                                <h1 class="primary__title">Trending Products</h1>
+                            </div>
+                        </div>
+                        <div class="section__titles category__titles">
+                            <div class="section__title filter-btn" data-id="Special Products">
+                                <span class="dot"></span>
+                                <h1 class="primary__title">Special Products</h1>
+                            </div>
+                        </div>
+                        <div class="section__titles category__titles">
+                            <div class="section__title filter-btn" data-id="Featured Products">
+                                <span class="dot"></span>
+                                <h1 class="primary__title">Featured Products</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category__container">
+                        <div class="category__center"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Category Center -->
         </div>
-        <!-- End Latest Products -->
     </main>
     <!-- End Main -->
+
+    <!-- Begin Footer -->
+    <footer id="footer"></footer>
+    <!-- End Footer -->
+
+    <!-- Begin Popup -->
+    <div class="popup hide__popup">
+        <div class="popup__content">
+            <div class="popup__close">
+                <svg>
+                    <use xlink:href="./assets/img/phone_store/sprite.svg#icon-cross"></use>
+                </svg>
+            </div>
+
+            <div class="popup__left">
+                <div class="popup-img__container">
+                    <img src="./assets/img/phone_store/popup.jpg" alt="" class="popup__img">
+                </div>
+            </div>
+
+            <div class="popup__right">
+                <div class="right__content">
+                    <h1>Get Discount <span>30%</span> Off</h1>
+                    <p>Sign up to our newsletter and save 30% for your next purchase. No spam, we promise!</p>
+                    <form action="#">
+                        <input type="email" class="popup__form" placeholder="Enter your email ...">
+                        <a href="#">Subcrible</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popup -->
+
+    <!-- Go To Top -->
+    <a href="#" class="goto-top scroll-link">
+        <svg>
+            <use xlink:href="./assets/img/phone_store/sprite.svg#icon-arrow-up"></use>
+        </svg>
+    </a>
 
     <!-- Glide JS -->
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>

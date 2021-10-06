@@ -35,6 +35,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body, input {
@@ -406,6 +407,10 @@ h3, h4 {
     transition: opacity 0.3s ease-in-out;
 }
 
+.section__titles:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
 span.dot {
     opacity: 0.6;
     padding: 0.45rem;
@@ -618,7 +623,197 @@ span.dot::before {
     fill: var(--grey);
 }
 
+/* Category Center */
+.category__center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem 2rem;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: 0.3s;
+    transform: scale(1);
+}
+
+.popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 55rem;
+    transform: translate(-50%, -50%);
+    padding: 1.6rem;
+    display: table;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.popup__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup__close svg {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.popup__left,
+.popup__right {
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.popup__right {
+    padding: 3rem 5rem;
+}
+
+.popup-img__container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.popup-img__container img.popup__img {
+    display: block;
+    width: 60rem;
+    height: 45rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.right__content {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.right__content h1 {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 1.6rem;
+}
+
+.right__content h1 span {
+    color: var(--green);
+}
+
+.right__content p {
+    font-size: 1.8rem;
+    color: var(--grey2);
+    margin-bottom: 1.6rem;
+}
+
+.popup__form {
+    width: 100%;
+    padding: 2rem 0;
+    text-indent: 1rem;
+    margin-bottom: 1.6rem;
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.popup__form:focus {
+    outline: none;
+}
+
+.right__content a:link,
+.right__content a:visited {
+    display: inline-block;
+    padding: 1.8rem 5rem;
+    border-radius: 3rem;
+    font-weight: var(--font-bold);
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--grey2);
+    transition: 0.3s;
+}
+
+.right__content a:hover {
+    color: var(--black);
+    background-color: var(--green);
+}
+
+.hide__popup {
+    transform: scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.goto-top:link,
+.goto-top:visited {
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    padding: 0.8rem 1.4rem;
+    border-radius: 1rem;
+    background-color: var(--orange);
+    visibility: hidden;
+    cursor: pointer;
+    transform: 0.3s;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.show-top:link,
+.show-top:visited {
+    visibility: visible;
+    z-index: 1999;
+}
+
+.goto-top svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--white);
+}
+
+.goto-top:hover {
+    background-color: var(--black4);
+}
+
 /* Media queries */
+@media only screen and (max-width: 1200px) {
+    /* Popup */
+    .right__content {
+        width: 100%;
+    }
+
+    .right__content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.3rem;
+    }
+}
+
 @media only screen and (max-width: 999px) {
     /* Hero area */
     .hero__center {
@@ -684,6 +879,24 @@ span.dot::before {
     .latest__products .glide__arrow--right,
     .related__products .glide__arrow--right {
         right: 7%;
+    }
+
+    /* Category Center */
+    .category__center {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Popup */
+    .popup__right {
+        width: 100%;
+    }
+
+    .popup__left {
+        display: none;
+    }
+
+    .right__content h1 {
+        font-size: 5rem;
     }
 }
 
@@ -772,6 +985,28 @@ span.dot::before {
     .related__products .glide__arrow--left {
         left: 70%;
     }
+
+    /* Popup */
+    .right__content h1 {
+        font-size: 4rem;
+    }
+
+    .right__content p {
+        font-size: 1.6rem;
+    }
+
+    .popup__form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.8rem 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .goto-top:link,
+    .goto-top:visited {
+        right: 5%;
+        bottom: 5%;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -821,7 +1056,7 @@ span.dot::before {
         flex-direction: column;
     }
 
-    .section__title {
+    .section__titles:not(:last-child) {
         margin: 0 0 1.3rem;
     }
 
@@ -868,6 +1103,64 @@ span.dot::before {
     .latest__products .glide__arrow--right,
     .related__products .glide__arrow--right {
         left: 85%;
+    }
+
+    /* Category Center */
+    .category__center {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category__products .product__header {
+        height: 10rem;
+    }
+
+    .category__products .product__header img {
+        object-fit: contain;
+    }
+
+    /* Popup */
+    .popup__right {
+        padding: 0 1.6rem;
+    }
+
+    .right__content {
+        width: 100%;
+    }
+
+    .popup__content {
+        height: 35rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .right__content h1 {
+        font-size: 3rem;
+    }
+
+    .right__content p {
+        font-size: 1.4rem;
+    }
+
+    .popup__form {
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-bottom: 1.3rem;
+    }
+
+    .right__content a:link,
+    .right__content a:visited {
+        padding: 1.5rem 3rem;
+    }
+
+    .popup__close {
+        top: 1rem;
+        right: 1rem;
+        padding: 1.3rem;
+    }
+
+    .popup__close svg {
+        width: 1.4rem;
+        height: 1.4rem;
     }
 }
 
