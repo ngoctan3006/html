@@ -1,27 +1,28 @@
 // Get product
 const getProducts = async () => {
-    try {
-        const results = await fetch('./assets/data/phone_store/products.json')
-        const data = await results.json()
-        const products = data.products
-        return products
-    } catch (err) {
-        console.log(err)
-    }
-}
+  try {
+    const results = await fetch('./assets/data/phone_store/products.json');
+    const data = await results.json();
+    const products = data.products;
+    return products;
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 // Load Products
 window.addEventListener('DOMContentLoaded', async () => {
-    const products = await getProducts()
-    displayProductsItem(products)
-})
+  const products = await getProducts();
+  displayProductsItem(products);
+});
 
-const categoryCenter = document.querySelector('.category__center')
+const categoryCenter = document.querySelector('.category__center');
 
 // Display Products
-const displayProductsItem = items => {
-    let displayProduct = items.map(product =>
-        `<div class="product category__product">
+const displayProductsItem = (items) => {
+  let displayProduct = items.map(
+    (product) =>
+      `<div class="product category__product">
             <div class="product__header">
                 <img src="${product.image}" alt="">
             </div>
@@ -70,46 +71,46 @@ const displayProductsItem = items => {
                     </a>
                 </ul>
             </div>
-        </div>`
-    )
+        </div>`,
+  );
 
-    displayProduct = displayProduct.join('')
-    if(categoryCenter) {
-        categoryCenter.innerHTML = displayProduct
-    }
-}
+  displayProduct = displayProduct.join('');
+  if (categoryCenter) {
+    categoryCenter.innerHTML = displayProduct;
+  }
+};
 
 // Filtering
-const filterBtn = document.querySelectorAll('.filter-btn')
-const categoryContainer = document.getElementById('category')
+const filterBtn = document.querySelectorAll('.filter-btn');
+const categoryContainer = document.getElementById('category');
 
-if(categoryContainer) {
-    categoryContainer.addEventListener('click', async e => {
-        const target = e.target.closest('.section__title')
-        if(!target) return;
+if (categoryContainer) {
+  categoryContainer.addEventListener('click', async (e) => {
+    const target = e.target.closest('.section__title');
+    if (!target) return;
 
-        const id = target.dataset.id
-        const products = await getProducts()
+    const id = target.dataset.id;
+    const products = await getProducts();
 
-        if(id) {
-            // Remove active from button
-            Array.from(filterBtn).forEach(btn => {
-                btn.classList.remove('active')
-            })
-            target.classList.add('active')
+    if (id) {
+      // Remove active from button
+      Array.from(filterBtn).forEach((btn) => {
+        btn.classList.remove('active');
+      });
+      target.classList.add('active');
 
-            // Load Products
-            let menuCategory = products.filter(product => {
-                if(product.category === id) {
-                    return product
-                }
-            })
-
-            if(id === 'All products') {
-                displayProductsItem(products)
-            } else {
-                displayProductsItem(menuCategory)
-            }
+      // Load Products
+      let menuCategory = products.filter((product) => {
+        if (product.category === id) {
+          return product;
         }
-    })
+      });
+
+      if (id === 'All products') {
+        displayProductsItem(products);
+      } else {
+        displayProductsItem(menuCategory);
+      }
+    }
+  });
 }

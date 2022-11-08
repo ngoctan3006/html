@@ -313,7 +313,11 @@ footer a:hover {
 
 /* Begin Bridal Party */
 .bridal {
-  background: linear-gradient(90deg, rgba(252, 249, 247, 0) 0%, rgba(252, 249, 247, 1) 100%),
+  background: linear-gradient(
+      90deg,
+      rgba(252, 249, 247, 0) 0%,
+      rgba(252, 249, 247, 1) 100%
+    ),
     url(../../img/wedding/palm-02a.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -466,7 +470,11 @@ footer a:hover {
 
 /* Begin RSVP */
 .rsvp {
-  background: linear-gradient(-90deg, rgba(252, 249, 247, 0) 0%, rgba(252, 249, 247, 1) 100%),
+  background: linear-gradient(
+      -90deg,
+      rgba(252, 249, 247, 0) 0%,
+      rgba(252, 249, 247, 1) 100%
+    ),
     url(../../img/wedding/Old-Church-2015082517.svg);
   background-repeat: no-repeat;
   background-position: left center;

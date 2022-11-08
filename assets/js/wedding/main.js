@@ -29,11 +29,15 @@ function filterPage(mainClass) {
         tab.classList.remove('active');
       });
       this.classList.add('active');
-      const tabContent = document.querySelectorAll(`${mainClass} .filter-cards`);
+      const tabContent = document.querySelectorAll(
+        `${mainClass} .filter-cards`,
+      );
       tabContent.forEach((content) => {
         content.classList.remove('t-active');
       });
-      const tabActive = document.querySelector(`${mainClass} .tab` + this.dataset.tab);
+      const tabActive = document.querySelector(
+        `${mainClass} .tab` + this.dataset.tab,
+      );
       tabActive.classList.add('t-active');
     });
   });

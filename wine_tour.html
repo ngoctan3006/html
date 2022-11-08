@@ -1,462 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wine Tour Demo</title>
-    <link rel="stylesheet" href="./assets/css/wine_tour/wine_tour.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/wine_tour/wine_tour.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
     <!-- Link demo: https://setsail.qodeinteractive.com/wine-tours -->
     <div class="app">
-        <!-- Begin header -->
-        <div id="header">
-            <!-- Begin topbar -->
-            <div class="topbar">
-                <!-- Begin about -->
-                <ul class="topbar__about">
-                    <li class="topbar__about-item">
-                        <a href="mailto: setsail@qode.com" class="topbar__about-link">
-                            <ion-icon class="topbar__about-icon" name="mail-outline"></ion-icon>
-                            <span class="topbar__about-text">setsail@qode.com</span>
-                        </a>
+      <!-- Begin header -->
+      <div id="header">
+        <!-- Begin topbar -->
+        <div class="topbar">
+          <!-- Begin about -->
+          <ul class="topbar__about">
+            <li class="topbar__about-item">
+              <a href="mailto: setsail@qode.com" class="topbar__about-link">
+                <ion-icon
+                  class="topbar__about-icon"
+                  name="mail-outline"
+                ></ion-icon>
+                <span class="topbar__about-text">setsail@qode.com</span>
+              </a>
+            </li>
+            <li class="topbar__about-item">
+              <a href="tel: 1 562 867 5309" class="topbar__about-link">
+                <ion-icon class="topbar__about-icon" name="call"></ion-icon>
+                <span class="topbar__about-text">1 562 867 5309</span>
+              </a>
+            </li>
+            <li class="topbar__about-item">
+              <a href="#" class="topbar__about-link">
+                <ion-icon
+                  class="topbar__about-icon"
+                  name="location-outline"
+                ></ion-icon>
+                <span class="topbar__about-text"
+                  >Broadway & Morris St, New York</span
+                >
+              </a>
+            </li>
+          </ul>
+          <!-- End about -->
+
+          <div class="topbar-wrapper">
+            <!-- Begin contact -->
+            <ul class="topbar__contact">
+              <li class="topbar__contact-item">
+                <a href="#">
+                  <ion-icon
+                    class="topbar__contact-icon"
+                    name="logo-twitter"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="topbar__contact-item">
+                <a href="#">
+                  <ion-icon
+                    class="topbar__contact-icon"
+                    name="logo-pinterest"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="topbar__contact-item">
+                <a href="#">
+                  <ion-icon
+                    class="topbar__contact-icon"
+                    name="logo-facebook"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="topbar__contact-item">
+                <a href="#">
+                  <ion-icon
+                    class="topbar__contact-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <!-- End contact -->
+
+            <!-- Begin language -->
+            <div class="topbar__language">
+              <span class="topbar__language-text">English</span>
+              <ion-icon
+                class="topbar__language-icon"
+                name="chevron-down"
+              ></ion-icon>
+
+              <ul class="topbar__language-list">
+                <li class="topbar__language-item">
+                  <span class="topbar__language-item-text underline-animate"
+                    >French</span
+                  >
+                </li>
+                <li class="topbar__language-item">
+                  <span class="topbar__language-item-text underline-animate"
+                    >German</span
+                  >
+                </li>
+                <li class="topbar__language-item">
+                  <span class="topbar__language-item-text underline-animate"
+                    >Italian</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- End language -->
+
+            <!-- Begin user -->
+            <div class="topbar__user">
+              <img
+                src="./assets/img/wine_tour/user/avatar.jpg"
+                alt=""
+                class="topbar__user-img"
+              />
+            </div>
+            <!-- End user -->
+          </div>
+        </div>
+        <!-- End topbar -->
+
+        <!-- Begin Logo -->
+        <div class="logo">
+          <img
+            src="./assets/img/wine_tour/logo/logo-centered.png"
+            alt=""
+            class="logo-img"
+          />
+        </div>
+        <!-- End Logo -->
+
+        <!-- Begin navbar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link active">
+                <span class="underline-animate">Home</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Travel Agency</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Winter Holidays</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Exotic Destinations</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Summer Holidays</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">City Tours</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">New Year Trips</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Destinations Carousel</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link active">
+                    <span class="underline-animate">Wine Tours</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Vacation Showcase</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Landing</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Pages</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">About Us</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">What We Offer</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Our Team</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Get In Touch</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Contact Us</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">FAQ Page</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Coming Soon</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Error Page</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Destinations</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Destination List</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Destination Slider</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Destination Item</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Tours</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Standard List</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Gallery List</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Split List</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Tour Item</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Blog</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Blog Masonry</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate"> Blog Standard </span>
+                    <ion-icon
+                      class="subnav-icon"
+                      name="chevron-forward"
+                    ></ion-icon>
+                  </a>
+
+                  <ul class="snav sub2nav">
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Right Sidebar</span>
+                      </a>
                     </li>
-                    <li class="topbar__about-item">
-                        <a href="tel: 1 562 867 5309" class="topbar__about-link">
-                            <ion-icon class="topbar__about-icon" name="call"></ion-icon>
-                            <span class="topbar__about-text">1 562 867 5309</span>
-                        </a>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Left Sidebar</span>
+                      </a>
                     </li>
-                    <li class="topbar__about-item">
-                        <a href="#" class="topbar__about-link">
-                            <ion-icon class="topbar__about-icon" name="location-outline"></ion-icon>
-                            <span class="topbar__about-text">Broadway & Morris St, New York</span>
-                        </a>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Without Sidebar</span>
+                      </a>
                     </li>
-                </ul>
-                <!-- End about -->
-    
-                <div class="topbar-wrapper">
-                    <!-- Begin contact -->
-                    <ul class="topbar__contact">
-                        <li class="topbar__contact-item">
-                            <a href="#">
-                                <ion-icon class="topbar__contact-icon" name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-                        <li class="topbar__contact-item">
-                            <a href="#">
-                                <ion-icon class="topbar__contact-icon" name="logo-pinterest"></ion-icon>
-                            </a>
-                        </li>
-                        <li class="topbar__contact-item">
-                            <a href="#">
-                                <ion-icon class="topbar__contact-icon" name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
-                        <li class="topbar__contact-item">
-                            <a href="#">
-                                <ion-icon class="topbar__contact-icon" name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
+                  </ul>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate"> Post Types </span>
+                    <ion-icon
+                      class="subnav-icon"
+                      name="chevron-forward"
+                    ></ion-icon>
+                  </a>
+
+                  <ul class="snav sub2nav">
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Standard</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Gallery</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Link</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Quote</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Video</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Audio</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">No Sidebar</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Shop</span>
+              </a>
+              <ul class="snav subnav">
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Product List</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Product Single</span>
+                  </a>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Shop Layouts</span>
+                    <ion-icon
+                      class="subnav-icon"
+                      name="chevron-forward"
+                    ></ion-icon>
+                  </a>
+
+                  <ul class="snav sub2nav">
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Three Columns</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Four Columns</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Full Width</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="snav-item subnav-item">
+                  <a href="#" class="snav-link subnav-link">
+                    <span class="underline-animate">Shop Pages</span>
+                    <ion-icon
+                      class="subnav-icon"
+                      name="chevron-forward"
+                    ></ion-icon>
+                  </a>
+
+                  <ul class="snav sub2nav">
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">My account</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Cart</span>
+                      </a>
+                    </li>
+                    <li class="snav-item sub2nav-item">
+                      <a href="#" class="snav-link sub2nav-link">
+                        <span class="underline-animate">Checkout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">
+                <span class="underline-animate">Element</span>
+              </a>
+
+              <div class="subnav-wrap">
+                <ul class="subnav-container row">
+                  <li class="subnav-item-wrap c-3">
+                    <span class="subnav-header">FEATURED</span>
+                    <ul class="snav">
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate">Tour List</span>
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate">Tour Carousel</span>
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate">Tours Filter</span>
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate"
+                            >Destination With Tours</span
+                          >
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate"
+                            >Destination List</span
+                          >
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate"
+                            >Destination Fullscreen Slider</span
+                          >
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate"
+                            >Fullscreen Sections</span
+                          >
+                        </a>
+                      </li>
+                      <li class="snav-item">
+                        <a href="#" class="snav-link">
+                          <span class="underline-animate"
+                            >Reviews Carousel</span
+                          >
+                        </a>
+                      </li>
                     </ul>
-                    <!-- End contact -->
-    
-                    <!-- Begin language -->
-                    <div class="topbar__language">
-                        <span class="topbar__language-text">English</span>
-                        <ion-icon class="topbar__language-icon" name="chevron-down"></ion-icon>
-    
-                        <ul class="topbar__language-list">
-                            <li class="topbar__language-item">
-                                <span class="topbar__language-item-text underline-animate">French</span>
-                            </li>
-                            <li class="topbar__language-item">
-                                <span class="topbar__language-item-text underline-animate">German</span>
-                            </li>
-                            <li class="topbar__language-item">
-                                <span class="topbar__language-item-text underline-animate">Italian</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End language -->
-    
-                    <!-- Begin user -->
-                    <div class="topbar__user">
-                        <img src="./assets/img/wine_tour/user/avatar.jpg" alt="" class="topbar__user-img">
-                    </div>
-                    <!-- End user -->
-                </div>
-            </div>
-            <!-- End topbar -->
-
-            <!-- Begin Logo -->
-            <div class="logo">
-                <img src="./assets/img/wine_tour/logo/logo-centered.png" alt="" class="logo-img">
-            </div>
-            <!-- End Logo -->
-
-            <!-- Begin navbar -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link active">
-                            <span class="underline-animate">Home</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Travel Agency</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Winter Holidays</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Exotic Destinations</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Summer Holidays</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">City Tours</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">New Year Trips</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Destinations Carousel</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link active">
-                                    <span class="underline-animate">Wine Tours</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Vacation Showcase</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Landing</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Pages</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">About Us</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">What We Offer</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Our Team</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Get In Touch</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Contact Us</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">FAQ Page</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Coming Soon</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Error Page</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Destinations</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Destination List</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Destination Slider</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Destination Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Tours</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Standard List</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Gallery List</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Split List</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Tour Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Blog</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Blog Masonry</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">
-                                        Blog Standard
-                                    </span>
-                                    <ion-icon class="subnav-icon" name="chevron-forward"></ion-icon>
-                                </a>
-
-                                <ul class="snav sub2nav">
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Right Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Left Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Without Sidebar</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">
-                                        Post Types
-                                    </span>
-                                    <ion-icon class="subnav-icon" name="chevron-forward"></ion-icon>
-                                </a>
-
-                                <ul class="snav sub2nav">
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Standard</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Gallery</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Link</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Quote</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Video</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Audio</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">No Sidebar</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Shop</span>
-                        </a>
-                        <ul class="snav subnav">
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Product List</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Product Single</span>
-                                </a>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Shop Layouts</span>
-                                    <ion-icon class="subnav-icon" name="chevron-forward"></ion-icon>
-                                </a>
-
-                                <ul class="snav sub2nav">
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Three Columns</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Four Columns</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Full Width</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="snav-item subnav-item">
-                                <a href="#" class="snav-link subnav-link">
-                                    <span class="underline-animate">Shop Pages</span>
-                                    <ion-icon class="subnav-icon" name="chevron-forward"></ion-icon>
-                                </a>
-
-                                <ul class="snav sub2nav">
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">My account</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Cart</span>
-                                        </a>
-                                    </li>
-                                    <li class="snav-item sub2nav-item">
-                                        <a href="#" class="snav-link sub2nav-link">
-                                            <span class="underline-animate">Checkout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">
-                            <span class="underline-animate">Element</span>
-                        </a>
-
-                        <div class="subnav-wrap">
-                            <ul class="subnav-container row">
-                                <li class="subnav-item-wrap c-3">
-                                    <span class="subnav-header">FEATURED</span>
-                                    <ul class="snav">
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Tour List</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Tour Carousel</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Tours Filter</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Destination With Tours</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Destination List</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Destination Fullscreen Slider</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Fullscreen Sections</span>
-                                            </a>
-                                        </li>
-                                        <li class="snav-item">
-                                            <a href="#" class="snav-link">
-                                                <span class="underline-animate">Reviews Carousel</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- <li class="subnav-wrap c-3">
+                  </li>
+                  <!-- <li class="subnav-wrap c-3">
                                     <span class="subnav-header">PRESENTATION</span>
                                     <ul class="snav">
                                         <li class="snav-item">
@@ -601,95 +662,130 @@
                                         </li>
                                     </ul>
                                 </li> -->
-                            </ul>
-                        </div>
-                    </li>
                 </ul>
-            </nav>
-            <!-- End navbar -->
-        </div>
-        <!-- End header -->
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End navbar -->
+      </div>
+      <!-- End header -->
 
-        <!-- Begin content -->
-        <div id="content">
-            <!-- Begin slider -->
-            <div id="slider"></div>
-            <!-- End slider -->
-        </div>
-        <!-- End content -->
+      <!-- Begin content -->
+      <div id="content">
+        <!-- Begin slider -->
+        <div id="slider"></div>
+        <!-- End slider -->
+      </div>
+      <!-- End content -->
 
-        <!-- Begin footer -->
-        <footer id="footer">
-            <div class="footer-content">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col c-3">
-                            <img src="./assets/img/wine_tour/logo/logo-centered.png" alt="" class="footer-logo">
-                            <p class="footer__about-description">
-                                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
-                            </p>
-                            <a href="mailto: setsail@qode.com" class="footer__about-info">
-                                <ion-icon class="footer__about-icon" name="mail-outline"></ion-icon>
-                                <span class="footer__about-text">setsail@qode.com</span>
-                            </a>
-                            <a href="tel: 1 562 867 5309" class="footer__about-info">
-                                <ion-icon class="footer__about-icon" name="call"></ion-icon>
-                                <span class="footer__about-text">1 562 867 5309</span>
-                            </a>
-                            <a href="#" class="footer__about-info">
-                                <ion-icon class="footer__about-icon" name="location-outline"></ion-icon>
-                                <span class="footer__about-text">Broadway & Morris St, New York</span>
-                            </a>
-                        </div>
-                        <div class="col c-3">
-                            <h5 class="footer__header">Our Recent Posts</h5>
-                            <ul class="footer__post-list">
-                                <li class="footer__post-item">
-                                    <a href="#" class="footer__post-place">Visit Thailand, Bali And China</a>
-                                    <a href="#" class="footer__post-time">September 7, 2016</a>
-                                </li>
-                                <li class="footer__post-item">
-                                    <a href="#" class="footer__post-place">The Sound Of Our Jungle</a>
-                                    <a href="#" class="footer__post-time">September 7, 2016</a>
-                                </li>
-                                <li class="footer__post-item">
-                                    <a href="#" class="footer__post-place">New Year, New Resolutions!</a>
-                                    <a href="#" class="footer__post-time">September 7, 2016</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col c-3">
-                            <h5 class="footer__header">Subscribe to our Newsletter</h5>
-                            <p class="footer__subcribe-text">
-                                Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
-                            </p>
-                            <div class="footer__subcrible-form">
-                                <ion-icon class="footer__subcrible-icon" name="person"></ion-icon>
-                                <input type="text" class="footer__subcrible-form-control" placeholder="Name">
-                            </div>
-                            <div class="footer__subcrible-form">
-                                <ion-icon class="footer__subcrible-icon" name="mail-outline"></ion-icon>
-                                <input type="email" class="footer__subcrible-form-control" placeholder="Email">
-                            </div>
-                            <div class="btn-submit">SUBCRIBLE</div>
-                        </div>
-                        <div class="col c-3">
-                            <h5 class="footer__header">Our Instagram</h5>
-                            <p class="footer__subcribe-text">
-                                Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <p class="footer__copyright-text">
-                    Powered by @
-                    <a href="#" class="footer__copyright-link"> Qode Interactive 2018</a>
+      <!-- Begin footer -->
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col c-3">
+                <img
+                  src="./assets/img/wine_tour/logo/logo-centered.png"
+                  alt=""
+                  class="footer-logo"
+                />
+                <p class="footer__about-description">
+                  Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
                 </p>
+                <a href="mailto: setsail@qode.com" class="footer__about-info">
+                  <ion-icon
+                    class="footer__about-icon"
+                    name="mail-outline"
+                  ></ion-icon>
+                  <span class="footer__about-text">setsail@qode.com</span>
+                </a>
+                <a href="tel: 1 562 867 5309" class="footer__about-info">
+                  <ion-icon class="footer__about-icon" name="call"></ion-icon>
+                  <span class="footer__about-text">1 562 867 5309</span>
+                </a>
+                <a href="#" class="footer__about-info">
+                  <ion-icon
+                    class="footer__about-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <span class="footer__about-text"
+                    >Broadway & Morris St, New York</span
+                  >
+                </a>
+              </div>
+              <div class="col c-3">
+                <h5 class="footer__header">Our Recent Posts</h5>
+                <ul class="footer__post-list">
+                  <li class="footer__post-item">
+                    <a href="#" class="footer__post-place"
+                      >Visit Thailand, Bali And China</a
+                    >
+                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                  </li>
+                  <li class="footer__post-item">
+                    <a href="#" class="footer__post-place"
+                      >The Sound Of Our Jungle</a
+                    >
+                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                  </li>
+                  <li class="footer__post-item">
+                    <a href="#" class="footer__post-place"
+                      >New Year, New Resolutions!</a
+                    >
+                    <a href="#" class="footer__post-time">September 7, 2016</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col c-3">
+                <h5 class="footer__header">Subscribe to our Newsletter</h5>
+                <p class="footer__subcribe-text">
+                  Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                </p>
+                <div class="footer__subcrible-form">
+                  <ion-icon
+                    class="footer__subcrible-icon"
+                    name="person"
+                  ></ion-icon>
+                  <input
+                    type="text"
+                    class="footer__subcrible-form-control"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="footer__subcrible-form">
+                  <ion-icon
+                    class="footer__subcrible-icon"
+                    name="mail-outline"
+                  ></ion-icon>
+                  <input
+                    type="email"
+                    class="footer__subcrible-form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="btn-submit">SUBCRIBLE</div>
+              </div>
+              <div class="col c-3">
+                <h5 class="footer__header">Our Instagram</h5>
+                <p class="footer__subcribe-text">
+                  Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus.
+                  Phasellus null
+                </p>
+              </div>
             </div>
-        </footer>
-        <!-- End footer -->
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Powered by @
+            <a href="#" class="footer__copyright-link">
+              Qode Interactive 2018</a
+            >
+          </p>
+        </div>
+      </footer>
+      <!-- End footer -->
     </div>
-</body>
+  </body>
 </html>
